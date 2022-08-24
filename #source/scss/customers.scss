@@ -1,0 +1,305 @@
+/* Customers section*/
+.customers {
+  width: 100%;
+  padding: 100px 0 230px 0;
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 68px;
+  }
+
+  &__img-box {
+    max-width: 478px;
+    height: auto;
+    border-radius: 60px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 538px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 1.5;
+    color: $title-color;
+    margin-bottom: 40px;
+  }
+
+  &__avatar-box {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 33px;
+    margin-bottom: 60px;
+  }
+
+  &__avatar-img-box {
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    background: $btn-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__avatar-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__avatar-content {}
+
+  &__avatar-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 1.5;
+    color: $title-color;
+  }
+
+  &__avatar-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.5;
+    color: $text-color;
+  }
+
+  &__testimonial {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+    color: $text-color;
+    max-width: 491px;
+    margin-bottom: 30px;
+  }
+
+  &__stars {
+    width: 100%;
+    max-width: 327px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__star {
+    width: 49px;
+    height: 47px;
+  }
+}
+
+/* Customers media queries */
+@media (max-width:1100px) {
+  .customers__img-box {
+    flex-shrink: .2;
+  }
+
+  .customers__inner {
+    align-items: center;
+  }
+}
+
+@media (max-width:950px) {
+  .customers {
+    padding: 50px 0 130px 0;
+
+    &__content {
+      max-width: 100%;
+    }
+
+    &__img-box {
+      flex-shrink: .2;
+    }
+    &__testimonial {
+      // max-width: 491px;
+      // max-width: 50%;
+    }
+
+    &__inner {
+      align-items: start;
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .customers {
+
+    &__title {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    &__avatar-title {
+      font-size: 30px;
+    }
+
+    &__avatar-text {
+      font-size: 22px;
+    }
+
+    &__testimonial {
+      font-size: 20px;
+    }
+  }
+
+}
+
+@media (max-width:600px) {
+  .customers {
+    &__inner {
+      align-items: center;
+
+    }
+
+    &__content {
+      width: 100%;
+      max-width: 470px;
+    }
+
+    &__title {
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+
+    &__avatar-title {
+      font-size: 27px;
+    }
+
+    &__avatar-text {
+      font-size: 20px;
+    }
+
+    &__testimonial {
+      font-size: 18px;
+    }
+
+    &__stars {
+      max-width: 320px;
+    }
+
+    &__star {
+      width: 46px;
+    }
+  }
+
+}
+
+@media (max-width:500px) {
+  .customers {
+    padding: 20px 0 60px 0;
+
+    &__inner {
+      gap: 50px;
+
+    }
+
+    &__img-box {
+      flex-shrink: 1;
+    }
+
+    &__content {
+      width: 100%;
+      max-width: 470px;
+    }
+
+    &__avatar-box {
+      margin-bottom: 40px;
+      gap: 15px;
+    }
+
+    &__avatar-content {
+      flex-shrink: 0;
+    }
+
+    &__avatar-img-box {
+      width: 100%;
+      max-width: 134px;
+      height: auto;
+    }
+
+    &__title {
+      font-size: 33px;
+      margin-bottom: 40px;
+    }
+
+    &__avatar-title {
+      font-size: 25px;
+    }
+
+    &__avatar-text {
+      font-size: 18px;
+    }
+
+    &__testimonial {
+      font-size: 16px;
+    }
+  }
+
+}
+
+@media (max-width:400px) {
+  .customers {
+    &__inner {
+      gap: 40px;
+
+    }
+
+    &__content {
+      width: 100%;
+      max-width: 470px;
+    }
+
+    &__img-box {
+      border-radius: 50px;
+    }
+
+    &__avatar-box {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+
+    &__avatar-title {
+      font-size: 20px;
+    }
+
+    &__avatar-text {
+      font-size: 16px;
+    }
+
+    &__testimonial {
+      font-size: 15px;
+    }
+
+    &__stars {
+      max-width: 310px;
+    }
+
+    &__star {
+      width: 42px;
+    }
+  }
+
+}

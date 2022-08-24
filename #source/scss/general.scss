@@ -1,0 +1,34 @@
+/* general styles*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $body-color;
+}
+
+.none{
+  display: none;
+}
+.no-scroll{
+  overflow-y: hidden;
+}
+
+.error{
+  color: rgb(233, 11, 11);
+}
+:root {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+  // border:1px solid #000;
+}
+
+.container-right {
+  padding-left: calc( (100% - 1270px) / 2);
+  
+  // border:1px solid rgb(144, 69, 7);
+}
+
+
