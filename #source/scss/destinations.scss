@@ -8,7 +8,6 @@
     width: 100%;
     display: flex;
     justify-content: start;
-    column-gap: 50px;
 
   }
 
@@ -135,10 +134,9 @@
 @media (max-width:1220px) {
   .destinations__inner {
     flex-direction: column;
-    row-gap: 30px;
   }
   .destinations__inner>.destinations__content {
-   margin-bottom: 30px;
+   margin-bottom: 50px;
   }
   .destinations__content {
     max-width: 100%;

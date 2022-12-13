@@ -14,6 +14,7 @@
   }
 
   .nav__menu-link {
+    line-height: 2;
     &:hover {
       color: #FF584E;
     }
@@ -21,10 +22,6 @@
     &:hover::after {
       width: 0;
     }
-  }
-
-  .nav__login {
-    gap: 20px;
   }
 
   .nav__login-login {
@@ -45,7 +42,6 @@
     padding: 30px 0 150px 0;
     .nav {
       position: relative;
-      column-gap: 0;
       padding-top: 0;
       justify-content: space-around;
     }
@@ -64,14 +60,27 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      column-gap: 20px;
-      row-gap: 20px;
-
       background: transparent;
 
       &-link {
         font-size: 15px;
       }
+    }
+    .nav__menu-item + .nav__menu-item {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width:500px) {
+  .footer {
+    .nav__menu {
+     flex-wrap: wrap;
+     justify-content: flex-start;
+      // top: 100px;
+    }
+    .nav__menu-item:nth-child(1) {
+       margin-left: 20px;
     }
   }
 }

@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 20px;
+  // row-gap: 20px;
 }
 
 .loader {
@@ -24,6 +24,7 @@
   border-radius: 50%;
   border-left-color: rgba(89, 241, 13, 0.7);
   animation: load 1.3s linear infinite;
+  margin-bottom: 20px;
 }
 
 @keyframes load {

@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // column-gap: 50px;
 
   .logo {
     font-style: normal;
@@ -34,7 +33,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 40px;
+  }
+
+  &__menu-item + .nav__menu-item {
+    margin-left: 40px;
   }
 
   &__menu-link {
@@ -162,6 +164,7 @@
 
     .nav__menu-item + .nav__menu-item {
       padding-top: 60px;
+      margin-left: 0;
     }
   }
   .burger{
@@ -169,7 +172,6 @@
    
   }
   .nav{
-    // column-gap: 20px;
     padding-top: 10px;
   }
   .nav__menu{
