@@ -5,6 +5,12 @@
 
   .logo {
     color: #FF7C4E;
+    transition: all .3s;
+    &:hover {
+      color:transparent;
+      -webkit-text-stroke: 1px #FF584E;
+      transition: all .3s;
+    }
   }
 
   .nav__menu-link {

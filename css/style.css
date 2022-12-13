@@ -588,6 +588,17 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.nav .logo:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px #FF584E;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .nav__menu {
@@ -2557,6 +2568,17 @@ body {
 
 .footer .logo {
   color: #FF7C4E;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer .logo:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px #FF584E;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .footer .nav__menu-link:hover {
