@@ -1,0 +1,45 @@
+.hide {
+  opacity: 0;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: solid 10px rgba(89, 241, 13, 0.1);
+  border-radius: 50%;
+  border-left-color: rgba(89, 241, 13, 0.7);
+  animation: load 1.3s linear infinite;
+}
+
+@keyframes load {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-text {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: rgba(89, 241, 13, 0.7);
+}
+
+.loader-span {
+ font-style: 40px;
+}
+

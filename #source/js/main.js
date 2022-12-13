@@ -1,4 +1,5 @@
 
+//@prepros-append loader.js
 //@prepros-append burger.js
 //@prepros-append slider.js
 //@prepros-append modals.js

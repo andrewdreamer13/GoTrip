@@ -404,12 +404,12 @@
       transition: all .3s;
       background: rgb(252, 145, 109);
     }
-    img{
-      width: 50%;
-      
-    }
+   
   }
-
+  &__svg {
+    fill:none;
+    stroke: #fff;
+  }
   .prev-button {
     left: -20px;
     transform: translateY(-100%);

@@ -16,17 +16,21 @@
 </head>
 
 <body>
+  <div class="mask">
+    <div class="loader"></div>
+    <div class="loader-text">Loading <span class="loader-span">.</span><span class="loader-span">.</span><span class="loader-span">.</span> </div>
+  </div>
   <section class="hero">
 
     <div class="container">
-<header class="hero__header">
+<header class="hero__header" id="header">
   <nav class="nav">
     <a class="logo" href="#">GoTrip</a>
     <ul class="nav__menu nav__menu--active">
-      <li class="nav__menu-item"><a class="nav__menu-link nav__menu-link--active" href="#">Home</a></li>
-      <li class="nav__menu-item"><a class="nav__menu-link" href="#">Services</a></li>
-      <li class="nav__menu-item"><a class="nav__menu-link" href="#">Pricing</a></li>
-      <li class="nav__menu-item"><a class="nav__menu-link" href="#">Contact</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-link " href="#destination">Destination</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-link" href="#testimonials">Testimonials</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-link" href="#start">Start Exploring</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-link" href="#subscribe">Subscribe</a></li>
     </ul>
     <ul class="nav__login">
       <li class="nav__login-item"><button class="nav__login-sign modal-btn"  data-path="one">Sign up</button></li>
@@ -97,7 +101,7 @@
     <div class="hero__bottom-block"></div>
   </section>
 
-  <section class="destinations">
+  <section class="destinations" id="destination">
     <div class="container-right">
       <div class="destinations__inner">
         <div class="destinations__content">
@@ -119,16 +123,28 @@
             <img class="destinations__slider-item" src="images/carousel-img8.jpg" alt="forest image">
 
           </div>
-          <button class="destinations__slider-btn prev-btn"><img class="destination__slider-img"
-              src="images/prev-arrow.svg" alt="prev arrow"></button>
-          <button class="destinations__slider-btn next-btn"><img class="destination__slider-img"
-              src="images/next-arrow.svg" alt="next arrow"></button>
+          <button class="destinations__slider-btn prev-btn">
+            <svg  class="destinations__slider-svg" width="16" height="20" viewbox="0 0 16 20"  xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 3L3.32575 9.15634C2.70826 9.54929 2.70825 10.4507 3.32575 10.8437L13 17"  stroke-width="5" stroke-linecap="round"/>
+              </svg>
+              
+            <!-- <img class="destination__slider-img"
+              src="images/prev-arrow.svg" alt="prev arrow"> -->
+            </button>
+          <button class="destinations__slider-btn next-btn">
+            <svg class="destinations__slider-svg" width="16" height="20" viewbox="0 0 16 20"  xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 17L12.6742 10.8437C13.2917 10.4507 13.2917 9.54929 12.6742 9.15634L3 3" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+              
+            <!-- <img class="destination__slider-img"
+              src="images/next-arrow.svg" alt="next arrow"> -->
+            </button>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="customers">
+  <section class="customers" id="testimonials">
     <div class="container">
       <div class="customers__inner">
         <div class="customers__img-box">
@@ -159,7 +175,7 @@
     </div>
   </section>
 
-  <section class="prepare">
+  <section class="prepare" id="start">
     <div class="container">
       <div class="prepare__inner">
         <h2 class="prepare__title">Prepare Yourself And Start Exploring With Us.</h2>
@@ -183,7 +199,7 @@
     </div>
   </section>
 
-  <section class="subscribe">
+  <section class="subscribe" id="subscribe">
     <div class="container">
       <div class="subscribe__inner">
         <h2 class="subscribe__title">Subscribe<br> To Our Newsletter</h2>
@@ -356,8 +372,16 @@
 
     <div class="modal-window__inner inner-four" data-target="four">
      <div class="big-gallery">
-        <button class="big-gallery__btn prev-button"><img src="images/prev-arrow.svg" alt="prev arrow"></button>
-        <button class="big-gallery__btn next-button"><img src="images/next-arrow.svg" alt="next arrow"></button>
+        <button class="big-gallery__btn prev-button">
+          <svg  class="big-gallery__svg" width="16" height="20" viewbox="0 0 16 20"  xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 3L3.32575 9.15634C2.70826 9.54929 2.70825 10.4507 3.32575 10.8437L13 17"  stroke-width="5" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <button class="big-gallery__btn next-button">
+          <svg class="big-gallery__svg" width="16" height="20" viewbox="0 0 16 20"  xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17L12.6742 10.8437C13.2917 10.4507 13.2917 9.54929 12.6742 9.15634L3 3" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </button>
         <div class="big-gallery__item">
           <div class="big-gallery__img-box">
             <img class="big-gallery__img" src="images/carousel-img1.jpg" alt="Forest image">
@@ -575,12 +599,12 @@
   <footer class="footer">
  <div class="container">
   <nav class="nav">
-    <a class="logo" href="#">GoTrip</a>
+    <a class="logo" href="#header">GoTrip</a>
     <ul class="nav__menu">
-      <li class="nav__menu-item"><a class="nav__menu-link" href="#">Home</a></li>
-      <li class="nav__menu-item"><a class="nav__menu-link" href="#">Services</a></li>
-      <li class="nav__menu-item"><a class="nav__menu-link" href="#">Pricing</a></li>
-      <li class="nav__menu-item"><a class="nav__menu-link" href="#">Contact</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-link " href="#destination">Destination</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-link" href="#testimonials">Testimonials</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-link" href="#start">Start Exploring</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-link" href="#subscribe">Subscribe</a></li>
     </ul>
     <ul class="nav__login">
       <li class="nav__login-item"><button class="nav__login-sign modal-btn"  data-path="one">Sign up</button></li>

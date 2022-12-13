@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 50px;
+  // column-gap: 50px;
 
   .logo {
     font-style: normal;
@@ -23,7 +23,7 @@
 
   &__menu {
     width: 100%;
-    max-width: 470px;
+    max-width:500px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -83,11 +83,13 @@
   &__login-login {
     background: $btn-bg;
     padding:17px 44px ;
+    border:1px solid transparent;
     border-radius: 27px;
     transition: all .3s;
     &:hover {
       color: #FF584E;
       background: $white-color;
+      border:1px solid #FF584E;
       transition: all .3s;
     }
   }
@@ -142,17 +144,26 @@
   
 }
 
+.burger:hover .burger__span {
+  background-color: #FF584E;
+  transition: all .3s;
+}
+
 // media queries
-@media (max-width:768px){
+@media (max-width:900px){
   .hero__header{
     padding: 60px 0 20px 0;
+
+    .nav__menu-item + .nav__menu-item {
+      padding-top: 60px;
+    }
   }
   .burger{
     display: block;
    
   }
   .nav{
-    column-gap: 20px;
+    // column-gap: 20px;
     padding-top: 10px;
   }
   .nav__menu{
@@ -170,13 +181,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    column-gap: 0;
-    row-gap: 60px;
     background: linear-gradient(315deg, #428E5F -17.38%, #112120 78.4%), #204434;
     &-link{
       font-size: 18px;
     }
   }
+  
   .nav__menu--transform{
     transform: translateY(0);
     transition: all .3s;

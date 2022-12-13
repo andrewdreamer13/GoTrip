@@ -64,6 +64,7 @@
     padding: 34px 86px;
     color: $white-color;
     background: $btn-bg;
+    border:1px solid transparent;
     border-radius: 35px;
     font-style: normal;
     font-weight: 600;
@@ -74,6 +75,7 @@
       transition: all .3s;
       background: $white-color;
       color: #FF584E;
+      border:1px solid #FF584E;
     }
   }
 }
